@@ -2,14 +2,35 @@
 @import "tailwindcss";
 
 
-
-@import "./stlye.css";
-@import "./colors.css";
+@import "./color.css";
 @import "./font.css";
 
 @theme{
   --test: "Noto Serid TC"
 }
+
+@layer components{
+  .btn-primary {
+  @apply px-[24px] py-[12px]  bg-[var(--color-primary-300)] text-[var(--color-text-primary)] font-bold rounded-[4px];
+  }
+  .card {
+    @apply flex flex-col items-start gap-[8px] w-[169.5px] h-[220.5px] ;
+  }
+
+
+  .card img{
+    @apply w-[169.5px] h-[169.5px];
+  }
+
+  .card-title {
+    @apply text-[20px] leading-[1.2] tracking-[0.05em]  font-bold;
+  }
+
+  .card-text {
+    @apply  TW-Label-md;
+  }
+}
+
 
 
     
@@ -18,28 +39,28 @@
     /*Typography -- ✨字體大小 - Line height (換成倍數）- Letter spacing✨*/
 
     .Display-1 {
-    @apply text-[64px] leading-[1.2] tracking-[0.05em];
+    @apply text-[64px] leading-[1.2] tracking-[0.05em] font-bold;
   }
     .Display-2 {
-    @apply text-[48px] leading-[1.2] tracking-[0.05em];
+    @apply text-[48px] leading-[1.2] tracking-[0.05em] font-bold;
   }
     .TW-Headings-H1 {
-    @apply text-[40px] leading-[1.2] tracking-[0.05em];
+    @apply text-[40px] leading-[1.2] tracking-[0.05em] font-bold;
   }
     .TW-Headings-H2 {
-    @apply text-[32px] leading-[1.2] tracking-[0.05em];
+    @apply text-[32px] leading-[1.2] tracking-[0.05em] font-bold;
   }
     .TW-Headings-H3 {
-    @apply text-[28px] leading-[1.2] tracking-[0.05em];
+    @apply text-[28px] leading-[1.2] tracking-[0.05em] font-bold;
   }
     .TW-Headings-H4 {
-    @apply text-[24px] leading-[1.2] tracking-[0.05em];
+    @apply text-[24px] leading-[1.2] tracking-[0.05em] font-bold;
   }
     .TW-Headings-H5 {
-    @apply text-[20px] leading-[1.2] tracking-[0.05em];
+    @apply text-[20px] leading-[1.2] tracking-[0.05em] font-bold;
   }
     .TW-Headings-H6 {
-    @apply text-[16px] leading-[1.2] tracking-[0.05em];
+    @apply text-[16px] leading-[1.2] tracking-[0.05em]  font-bold;
   }
    .TW-Label-lg {
     @apply text-[20px] leading-[1.5] tracking-[0.05em];

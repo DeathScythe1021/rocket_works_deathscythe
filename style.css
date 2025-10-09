@@ -185,8 +185,17 @@
   .h-full {
     height: 100%;
   }
+  .w-1920 {
+    width: calc(var(--spacing) * 1920);
+  }
   .w-\[18px\] {
     width: 18px;
+  }
+  .w-\[1920\] {
+    width: 1920;
+  }
+  .w-\[1920px\] {
+    width: 1920px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -196,6 +205,9 @@
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .items-center {
+    align-items: center;
   }
   .justify-between {
     justify-content: space-between;
@@ -219,6 +231,9 @@
   .bg-center {
     background-position: center;
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-\[20px\] {
     padding: 20px;
   }
@@ -227,6 +242,9 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-\[--spacing-m\] {
     padding-block: --spacing-m;
