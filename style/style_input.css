@@ -1,0 +1,73 @@
+
+@import "tailwindcss";
+
+
+
+@import "./stlye.css";
+@import "./colors.css";
+@import "./font.css";
+
+@theme{
+  --test: "Noto Serid TC"
+}
+
+
+    
+@layer components{
+
+    /*Typography -- ✨字體大小 - Line height (換成倍數）- Letter spacing✨*/
+
+    .Display-1 {
+    @apply text-[64px] leading-[1.2] tracking-[0.05em];
+  }
+    .Display-2 {
+    @apply text-[48px] leading-[1.2] tracking-[0.05em];
+  }
+    .TW-Headings-H1 {
+    @apply text-[40px] leading-[1.2] tracking-[0.05em];
+  }
+    .TW-Headings-H2 {
+    @apply text-[32px] leading-[1.2] tracking-[0.05em];
+  }
+    .TW-Headings-H3 {
+    @apply text-[28px] leading-[1.2] tracking-[0.05em];
+  }
+    .TW-Headings-H4 {
+    @apply text-[24px] leading-[1.2] tracking-[0.05em];
+  }
+    .TW-Headings-H5 {
+    @apply text-[20px] leading-[1.2] tracking-[0.05em];
+  }
+    .TW-Headings-H6 {
+    @apply text-[16px] leading-[1.2] tracking-[0.05em];
+  }
+   .TW-Label-lg {
+    @apply text-[20px] leading-[1.5] tracking-[0.05em];
+  }
+   .TW-Label-md {
+    @apply text-[16px] leading-[1.5] tracking-[0.05em];
+  }
+    .TW-Label-sm {
+    @apply text-[14px] leading-[1.5] tracking-[0.05em];
+  }
+    .TW-Label-xs {
+    @apply text-[12px] leading-[1.2] tracking-[0.05em];
+  } 
+   .TW-Paragraph-ig {
+    @apply text-[20px] leading-[1.2] tracking-[0.05em];
+  } 
+   .TW-Paragraph-md {
+    @apply text-[16px] leading-[1.2] tracking-[0.05em];
+  } 
+   .TW-Paragraph-sm{
+    @apply text-[14px] leading-[1.2] tracking-[0.05em];
+  } 
+   .TW-Paragraph-xs {
+    @apply text-[12px] leading-[1.2] tracking-[0.05em];
+  } 
+
+
+
+
+}
+
