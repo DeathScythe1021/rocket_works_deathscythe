@@ -9,32 +9,11 @@
   --test: "Noto Serid TC"
 }
 
-@layer components{
-  .btn-primary {
-  @apply px-[24px] py-[12px]  bg-[var(--color-primary-300)] text-[var(--color-text-primary)] font-bold rounded-[4px];
-  }
-  .card {
-    @apply flex flex-col items-start gap-[8px] w-[169.5px] h-[220.5px] ;
-  }
-
-
-  .card img{
-    @apply w-[169.5px] h-[169.5px];
-  }
-
-  .card-title {
-    @apply text-[20px] leading-[1.2] tracking-[0.05em]  font-bold;
-  }
-
-  .card-text {
-    @apply  TW-Label-md;
-  }
-}
 
 
 
     
-@layer components{
+@layer base{
 
     /*Typography -- ✨字體大小 - Line height (換成倍數）- Letter spacing✨*/
 
@@ -60,7 +39,7 @@
     @apply text-[20px] leading-[1.2] tracking-[0.05em] font-bold;
   }
     .TW-Headings-H6 {
-    @apply text-[16px] leading-[1.2] tracking-[0.05em]  font-bold;
+    @apply text-[16px] leading-[1.2] tracking-[0.05em] font-bold;
   }
    .TW-Label-lg {
     @apply text-[20px] leading-[1.5] tracking-[0.05em];
@@ -74,7 +53,7 @@
     .TW-Label-xs {
     @apply text-[12px] leading-[1.2] tracking-[0.05em];
   } 
-   .TW-Paragraph-ig {
+   .TW-Paragraph-lg {
     @apply text-[20px] leading-[1.2] tracking-[0.05em];
   } 
    .TW-Paragraph-md {
@@ -88,7 +67,45 @@
   } 
 
 
-
-
 }
+
+@layer components{
+
+  .section-width{
+    @apply flex  flex-col px-[12px] py-[40px] max-w-[1320px] w-full justify-center items-center; 
+  }
+
+  .btn-primary {
+  @apply px-[24px] py-[12px]  bg-[var(--color-primary-300)] text-[var(--color-text-primary)] font-bold rounded-[4px];
+  }
+
+  .btn-secondary {
+  @apply px-[24px] py-[12px]  bg-[var(--color-neutral-900)] text-[var(--color-text-on-dark)] font-bold rounded-[4px];
+  }
+
+
+  .card-grid{
+     @apply grid pt-[24px] grid-cols-2 gap-x-3 gap-y-6 lg:gap-x-6 lg:gap-y-10 ;
+  }
+
+
+  .card {
+    @apply flex flex-col items-start gap-y-2 lg:gap-y-3  max-h-[700px];
+  }
+
+
+  .card img{
+    @apply  w-full h-auto lg:max-w-[636px] ;
+  }
+
+  .card-title {
+    @apply text-[16px] leading-[1.2] tracking-[0.05em] font-bold lg:text-[20px];
+  }
+
+  .card-text {
+
+     @apply text-[16px] leading-[1.5] tracking-[0.05em];
+  }
+}
+
 
