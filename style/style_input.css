@@ -80,7 +80,7 @@
   }
 
   .btn-secondary {
-  @apply px-[24px] py-[12px]  bg-[var(--color-neutral-900)] text-[var(--color-text-on-dark)] font-bold rounded-[4px];
+  @apply px-[16px] py-[8px]  bg-[var(--color-neutral-900)] text-[var(--color-text-on-dark)] font-bold rounded-[4px];
   }
 
 
