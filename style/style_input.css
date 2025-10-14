@@ -71,6 +71,7 @@
 
 @layer components{
 
+
   .section-width{
     @apply flex  flex-col px-[12px] py-[40px] max-w-[1320px] w-full justify-center items-center; 
   }
@@ -84,7 +85,7 @@
   }
 
   .btn-secondary {
-  @apply px-[16px] py-[8px]  bg-[var(--color-neutral-900)] text-[var(--color-text-on-dark)] font-bold rounded-[4px] text-[16px] leading-[1.5] tracking-[0.05em] border-1 border-black;
+  @apply px-[16px] py-[8px]  bg-[var(--color-neutral-900)] text-[var(--color-text-on-dark)] font-medium rounded-[4px] text-[16px] leading-[1.5] tracking-[0.05em] border-1 border-black;
   }
 
 
