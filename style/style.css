@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-neutral-100: #F8F9FA;
     --color-neutral-300: #DEE2E6;
@@ -29,6 +30,7 @@
     --color-primary-200: #E8fec5;
     --color-primary-300: #c0fa73;
     --color-primary-400: #57a204;
+    --color-primary-500: #477a11;
     --spacing-2xl: 40px;
     --spacing-3xl: 48px;
   }
@@ -203,6 +205,12 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
   .flex {
     display: flex;
   }
@@ -212,8 +220,14 @@
   .hidden {
     display: none;
   }
+  .inline {
+    display: inline;
+  }
   .inline-block {
     display: inline-block;
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
@@ -257,6 +271,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -293,6 +310,9 @@
   .max-w-\[746px\] {
     max-width: 746px;
   }
+  .max-w-\[856px\] {
+    max-width: 856px;
+  }
   .max-w-\[1076px\] {
     max-width: 1076px;
   }
@@ -301,6 +321,9 @@
   }
   .flex-shrink-0 {
     flex-shrink: 0;
+  }
+  .list-disc {
+    list-style-type: disc;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -347,6 +370,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
   .gap-\[1\.5px\] {
     gap: 1.5px;
   }
@@ -386,6 +412,10 @@
   .rounded-\[4px\] {
     border-radius: 4px;
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -397,6 +427,32 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
+  }
+  .border-b-1 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-l-1 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
+  .border-l-3 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 3px;
+  }
+  .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .border-l-6 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 6px;
+  }
+  .border-\[\#1a81e8\] {
+    border-color: #1a81e8;
+  }
+  .border-\[\#063d73\] {
+    border-color: #063d73;
   }
   .border-\[\#DEE2E6\] {
     border-color: #DEE2E6;
@@ -443,6 +499,18 @@
   .bg-\[url\(\'\/images\/banner-sm\.png\'\)\] {
     background-image: url('/images/banner-sm.png');
   }
+  .bg-\[url\(\'\/images\/story-s\.png\'\)\] {
+    background-image: url('/images/story-s.png');
+  }
+  .bg-\[url\(\'\/images\/story-sm\.png\'\)\] {
+    background-image: url('/images/story-sm.png');
+  }
+  .bg-\[url\(\'\/images\/story_sm\.png\'\)\] {
+    background-image: url('/images/story_sm.png');
+  }
+  .bg-\[url\(\'\/images\/storysm\.png\'\)\] {
+    background-image: url('/images/storysm.png');
+  }
   .bg-contain {
     background-size: contain;
   }
@@ -463,6 +531,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
   }
   .p-12 {
     padding: calc(var(--spacing) * 12);
@@ -536,14 +607,29 @@
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
   .pb-\[32px\] {
     padding-bottom: 32px;
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
   }
   .pl-\[24px\] {
     padding-left: 24px;
+  }
+  .pl-\[87px\] {
+    padding-left: 87px;
+  }
+  .pl-\[px\] {
+    padding-left: px;
   }
   .text-center {
     text-align: center;
@@ -581,6 +667,9 @@
   .text-\[var\(--color-text-secondary\)\] {
     color: var(--color-text-secondary);
   }
+  .text-\[var\] {
+    color: var;
+  }
   .text-black {
     color: var(--color-black);
   }
@@ -589,6 +678,34 @@
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .hover\:text-\[var\(\)\] {
+    &:hover {
+      @media (hover: hover) {
+        color: var();
+      }
+    }
+  }
+  .hover\:text-\[var\(--color-primary-500\)\] {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary-500);
+      }
+    }
+  }
+  .hover\:text-\[var\] {
+    &:hover {
+      @media (hover: hover) {
+        color: var;
+      }
+    }
+  }
+  .hover\:text-blue-500 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-500);
+      }
+    }
   }
   .lg\:top-\[68px\] {
     @media (width >= 64rem) {
@@ -613,6 +730,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:h-\[400px\] {
+    @media (width >= 64rem) {
+      height: 400px;
     }
   }
   .lg\:h-\[589px\] {
@@ -815,6 +937,16 @@
       background-image: url('/images/bg.png');
     }
   }
+  .lg\:bg-\[url\(\'\/images\/story\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('/images/story.png');
+    }
+  }
+  .lg\:p-8 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
   .lg\:p-\[71px\] {
     @media (width >= 64rem) {
       padding: 71px;
@@ -885,6 +1017,11 @@
       padding-top: 71px;
     }
   }
+  .lg\:pb-12 {
+    @media (width >= 64rem) {
+      padding-bottom: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:pb-104 {
     @media (width >= 64rem) {
       padding-bottom: calc(var(--spacing) * 104);
@@ -893,6 +1030,11 @@
   .lg\:pl-\[200px\] {
     @media (width >= 64rem) {
       padding-left: 200px;
+    }
+  }
+  .lg\:text-center {
+    @media (width >= 64rem) {
+      text-align: center;
     }
   }
   .lg\:text-right {
