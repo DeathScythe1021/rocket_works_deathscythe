@@ -15,9 +15,9 @@
 </head>
 <body>
 
-     <div class="w-full overflow-x-hidden"><!--content wrapper-->
+     <div class="w-full overflow-x-hidden justify-center items-center"><!--content wrapper-->
        
-            <!--navbar-->
+        <!--navbar-->
             <nav class=" flex flex-col items-center w-full ">
                 <div class="flex  p-[12px] max-w-[1320px] w-full justify-between   ">
                 <!--左-->
@@ -39,20 +39,71 @@
                 </div>
                 
             </nav>
-       
-        <!--section-Call to Action-->
-                  <section class=" w-full pt-[24px] ">
-                    <div class=" w-full  bg-[var(--color-primary-200)] px-[24px] py-[32px] lg:py-[33.5] ">
-                    <div class="flex flex-raw justify-between lg:justify-center items-center  w-full lg:gap-6">
-                    <h2 class="TW-Headings-H5  lg:TW-Headings-H4 ">加入會員取得9折優惠</h2>
-                    <button class="btn-secondary TW-Label-md ">馬上註冊</button>
+        
+
+        <main class="flex flex-col justify-center items-center w-full">
+        <!--picture-->
+        <div class=" lg:hidden flex flex-col p-6  bg-[url('/images/banner-sm.png')] bg-cover bg-center w-full  h-[240px] justify-start    ">
+                <h1 class="TW-Headings-H1 lg:Display-2 text-[var(--color-text-on-dark)]">URBNSTEP</h1>
+                <h3 class="TW-Headings-H6 lg:TW-Headings-H4 text-[var(--color-neutral-500)] lg:text-right">Your Step, Your Statement</h3>
+                </div>
+        <!--login-section-->
+        <section class="section-width ">
+           
+            <div class="w-full lg:h-[589px] flex flex-col lg:flex-row lg:gap-6 ">
+                
+                <div class=" hidden lg:flex flex-col p-6 lg:px-10 lg:py-[71px]  lg:h-full  lg:max-w-[526px]  bg-[url('/images/banner-sm.png')] bg-cover bg-center w-full justify-start lg:rounded-[12px]   ">
+                <h1 class="TW-Headings-H1 lg:Display-2 text-[var(--color-text-on-dark)]">URBNSTEP</h1>
+                <h3 class="TW-Headings-H6 lg:TW-Headings-H4 text-[var(--color-neutral-500)] lg:text-right">Your Step, Your Statement</h3>
+                </div>
+
+                <div class="flex flex-col lg:bg-[url('/images/bg.png')] lg:rounded-[12px] bg-contain w-full px-3 py-8 lg:px-20 lg:py-30 gap-6 lg:gap-8 justify-center items-center">
+                <h3 class="TW-Headings-H4 lg:TW-Headings-H3 ">歡迎!</h3>
+                    <div class="flex w-full ">
+                        <button class="w-1/2 py-2 flex items-center justify-center border-b boder-2">
+                            登入
+                        </button>
+
+                        <button class="w-1/2 py-2 flex items-center justify-center border-b boder-2">
+                            註冊
+                        </button>
+                    </div>
+
+                    <div class="w-full flex flex-col gap-2">
+                        <button class="flex w-full  gap-2 p-3 border-[1px] boder-[var(--color-neutral-300)] bg-[#ffffff] border-[#DEE2E6] TW-Paragraph-md items-center rounded-[4px] lg:rounded-[8px]"> 
+                            <img src="/images/Facebook.jpg">
+                            Facebook 登入 
+                        </button>
+                        <button class="flex w-full  gap-2 p-3 border-[1px] boder-[var(--color-neutral-300)] bg-[#ffffff] border-[#DEE2E6] TW-Paragraph-md items-center rounded-[4px] lg:rounded-[8px]"> 
+                            <img src="/images/apple.jpg">
+                            Apple 登入 
+                        </button>
+                        <button class="flex w-full  gap-2 p-3 border-[1px] boder-[var(--color-neutral-300)] bg-[#ffffff] border-[#DEE2E6] TW-Paragraph-md items-center rounded-[4px] lg:rounded-[8px]"> 
+                            <img src="/images/google.jpg">
+                            Google 登入 
+                        </button>
 
                     </div>
-                    </div>
-                  </section>     
+            </div>
+
+            
+
+
+
+            </div>
+
+
+
+               
+            
+         
+                
+            
+        </section>
+        </main>
 
          <!--footer-->
-             <footer class=" flex flex-col items-center w-full py-[32px] px-[12px] lg:py-16 ">
+             <footer class=" flex flex-col items-center w-full py-[32px] px-[12px] lg:py-16  bg-[var(--color-neutral-100)] gap-6">
                 <div class="flex  flex-col lg:flex-raw lg:justify-between  max-w-[1320px] w-full py-[8px] ">
         
                      
