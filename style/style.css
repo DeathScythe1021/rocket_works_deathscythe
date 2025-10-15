@@ -190,6 +190,9 @@
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
   .top-\[36\.24px\] {
     top: 36.24px;
   }
@@ -216,6 +219,9 @@
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
+  }
+  .contents {
+    display: contents;
   }
   .flex {
     display: flex;
