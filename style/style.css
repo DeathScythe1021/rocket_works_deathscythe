@@ -466,6 +466,10 @@
   .rounded-\[4px\] {
     border-radius: 4px;
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -535,6 +539,9 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-\[\#ffffff\] {
     background-color: #ffffff;
