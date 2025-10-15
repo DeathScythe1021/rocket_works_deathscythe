@@ -22,26 +22,36 @@
                 <div class="flex  p-[12px] max-w-[1320px] w-full justify-between   ">
                 <!--左-->
                 <div class="flex justify-between items-center  gap-[var(--spacing-3xl)] ">
-                <div>
-                      <img src="../images/Logo.png" alt="logo" class=" w-[129px] h-[46px] lg:w-[105px] lg:h-auto "  />
-                </div>
+                <a href="index.html">
+                    <img src="../images/Logo.png" alt="logo" class="w-[129px] h-[46px] lg:w-[105px] lg:h-auto" />
+                </a>
                 <!--電腦版（小螢幕時隱藏）-->
                 <div class=" gap-[var(--spacing-2xl)] hidden lg:flex ">
-                        <span class=" inline-block ">商品列表</span>
-                        <span class="inline-block ">品牌故事</span>
+                         <a href="product.html" class="inline-block">商品列表</a>
+                        <a href="story.html" class="inline-block">品牌故事</a>
                 </div>
                 </div>
     
                 <!--右-->
-                <button class="">
-                <img src="../images/Btn wrapper.png" alt="person-btn" class="w-[48px] h-[48px]">
-                </button>
+                <a href="login.html">
+                    <img src="../images/Btn wrapper.png" alt="logo" class="w-[48px] h-[48px] " />
+                </a>
                 </div>
                 
             </nav>
         <!--product-picture-->
-            <img src="../images/Product image.jpg" class="lg:hidden w-full h-auto">
-        
+        <div class="flex justify-center">
+        <div class="flex overflow-hidden overflow-x-scroll scroll-smooth snap-x snap-mandatory snap-center  gap-4  max-w-[500px]">        
+            <img src="../images/Main image.jpg" class="lg:hidden flex-shrink-0 snap-center h-auto">
+            <img src="../images/Main image-1.jpg" class="lg:hidden flex-shrink-0 snap-center  h-auto">
+            <img src="../images/Main image-2.jpg" class="lg:hidden flex-shrink-0 snap-center h-auto">
+            <img src="../images/Main image-3.jpg" class="lg:hidden flex-shrink-0 snap-center h-auto">
+            <img src="../images/Main image-4.jpg" class="lg:hidden  flex-shrink-0 snap-center h-auto">
+            <img src="../images/Main image-5.jpg" class="lg:hidden  flex-shrink-0 snap-center h-auto">
+            <img src="../images/Main image-6.jpg" class="lg:hidden flex-shrink-0 snap-center h-auto">
+            <img src="../images/Main image-7.jpg" class="lg:hidden flex-shrink-0 snap-center h-auto">
+        </div>
+        </div>
 
          <!--section-product-->
          <section class="flex flex-col  w-full max-w-[1320px]  justify-center items-center mx-auto  px-3 pt-6 pb-4 lg:pt-8">
@@ -86,11 +96,11 @@
                         <p class="TW-Paragraph-md">顏色</p>
                         <div class="flex gap-2 ">
                         <div class="flex flex-col items-center gap-1 ">
-                            <img src="../images/Product-Card-1.png" alt="黑色" class="w-16 h-16">
+                            <img src="../images/Product-Card-1.png" alt="黑色" class="w-16 h-16 hover:border-[var(--color-neutral-900)] hover:border-1">
                             <p class="TW-Label-md text-[var(--color-neutral-600)]">黑色</p>
                         </div>
                         <div class="flex flex-col items-center gap-1">
-                            <img src="../images/Product-Card-2.png" alt="黑色" class="w-16 h-16">
+                            <img src="../images/Product-Card-2.png" alt="黑色" class="w-16 h-16  hover:border-[var(--color-neutral-900)] hover:border-1">
                             <p class="TW-Label-md text-[var(--color-neutral-600)]">卡其色</p>
                         </div>
 
@@ -98,29 +108,38 @@
                     <div class="flex flex-col gap-2">
                         <p class="TW-Paragraph-md">尺寸</p>
                         <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
-                            <div class="btn-size border-[var(--color-neutral-900)]">35(22.5cm)</div>
-                            <div class="btn-size">36(23.0cm)</div>
-                            <div class="btn-size">37(23.5cm)</div>
-                            <div class="btn-size">38(24.0cm)</div>
-                            <div class="btn-size">39(24.5cm)</div>
-                            <div class="btn-size">40(25.0cm)</div>
-                            <div class="btn-size">41(26.0cm)</div>
-                            <div class="btn-size  text-[var(--color-neutral-500)]">42(26.5cm)</div>
-                            <div class="btn-size text-[var(--color-neutral-500)]">43(27.0cm)</div>
+                            <button class="btn-size ">35(22.5cm)</button>
+                            <button class="btn-size ">36(23.0cm)</button>
+                            <button class="btn-size">37(23.5cm)</button>
+                            <button class="btn-size ">38(24.0cm)</button>
+                            <button class="btn-size">39(24.5cm)</button>
+                            <button class="btn-size ">40(25.0cm)</button>
+                            <button class="btn-size ">41(26.0cm)</button>
+                            <button class="btn-size text-[var(--color-neutral-500)] hover:border-[var(--color-neutral-300)]">42(26.5cm)</button>
+                            <button class="btn-size  text-[var(--color-neutral-500)]  hover:border-[var(--color-neutral-300)]">43(27.0cm)</button>
+                            <button class="btn-size  text-[var(--color-neutral-500)]  hover:border-[var(--color-neutral-300)] ">35(22.5cm)</button>
+
                         </div>
                         <p class="TW-Paragraph-sm text-[#D74F4F]"> 僅剩3雙</p>
                     </div>
                     </div>
-                        <div class="flex lg:gap-2">
+                        <div class="flex gap-2 ">
+                            <button class="hidden btn-secondary text-black lg:flex gap-2 py-3 w-full justify-center items-center bg-white border-black active:bg-black active:text-white hover:bg-black hover:text-white  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                </svg>
+                                加入收藏
+                            </button>
+
                             <button class="btn-secondary flex gap-2 py-3 w-full justify-center">
                                 <img src="../images/handbag.png" alt="" class="w-5 h-5">
                                 門市預約試穿
                             </button>
-                            <button class="hidden btn-secondary text-black lg:flex gap-2 py-3 w-full justify-center bg-white border-black ">
-                                <img src="../images/like Icon Button.png" class="w-5 h-5" >
-                                加入收藏
+                            <button class="p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart lg:hidden" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                            </svg>
                             </button>
-                            <img src="../images/like Icon Button.png" class="lg:hidden">
                         </div>
                 </div>
 
@@ -162,7 +181,7 @@
          <section class="flex flex-col w-full  lg:items-center lg:justify-center pl-3 lg:py-[40px] lg:px-[12px]">
                     <div class=" flex flex-col justify-center gap-[16px] w-full max-w-[1320px] overflow-hidden">
                         <h1 class="TW-Headings-H4 lg:TW-Headings-H42 ">你可能也喜歡...</h1>
-                        <div class="flex flex-row gap-[16px] lg:gap-[24px] lg:justify-center">
+                        <div class="flex flex-row gap-[16px] lg:gap-[24px] lg:justify-center overflow-scroll">
                             <div class="card w-[300px] flex-shrink-0">
                                 <img src="../images/Product-Card-3.png" alt="new" class="" />
                                 <div class="flex flex-col ">
@@ -203,7 +222,7 @@
 
         <!--section-Call to Action-->
                   <section class=" w-full pt-[24px] ">
-                    <div class=" w-full  bg-[var(--color-primary-200)] px-[24px] py-[32px] lg:py-[33.5] ">
+                    <div class=" w-full  bg-[var(--color-primary-200)] px-[24px] py-[32px] lg:py-[33.5] whitespace-nowrap ">
                     <div class="flex flex-raw justify-between lg:justify-center items-center  w-full lg:gap-6">
                     <h2 class="TW-Headings-H5  lg:TW-Headings-H4 ">加入會員取得9折優惠</h2>
                     <button class="btn-secondary TW-Label-md ">馬上註冊</button>
@@ -222,8 +241,8 @@
                       <img src="../images/Logo.png" alt="logo" class=" w-[129px] h-[46px] lg:w-[105px] lg:h-auto "  />
                              
                     <div class=" gap-[var(--spacing-2xl)] hidden lg:flex ">
-                        <span class=" inline-block ">商品列表</span>
-                        <span class="inline-block ">品牌故事</span>
+                        <a href="product.html" class="inline-block">商品列表</a>
+                        <a href="story.html" class="inline-block">品牌故事</a>
                      </div>
                    
                     </div>
@@ -232,8 +251,8 @@
                
                     <!--手機版（大螢幕時隱藏）-->
                     <div class=" flex flex-col w-full  lg:hidden">
-                        <div class=" text-left py-[12px] px-[12px] ">商品列表</div>
-                        <div class=" text-left py-[12px] px-[12px]">品牌故事</div>
+                        <a href="product.html"  class=" text-left py-[12px] px-[12px] ]">商品列表</a>
+                        <a href="story.html"  class=" text-left py-[12px] px-[12px]">品牌故事</a>
                     </div>
                     
                 </div>
