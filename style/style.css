@@ -325,6 +325,9 @@
   .max-w-\[1320px\] {
     max-width: 1320px;
   }
+  .max-w-\[1920px\] {
+    max-width: 1920px;
+  }
   .min-w-max {
     min-width: max-content;
   }
@@ -892,6 +895,11 @@
   .lg\:max-w-\[526px\] {
     @media (width >= 64rem) {
       max-width: 526px;
+    }
+  }
+  .lg\:max-w-\[1920px\] {
+    @media (width >= 64rem) {
+      max-width: 1920px;
     }
   }
   .lg\:min-w-0 {
