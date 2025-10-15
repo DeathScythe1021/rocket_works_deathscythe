@@ -539,6 +539,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\.\.\/images\/banner-sm\.png\'\)\] {
+    background-image: url('.../images/banner-sm.png');
+  }
   .bg-\[url\(\'\.\.\/images\/banner-co-branded-sm\.png\'\)\] {
     background-image: url('../images/banner-co-branded-sm.png');
   }
@@ -550,6 +553,9 @@
   }
   .bg-\[url\(\'\.\/images\/banner-sm\.png\'\)\] {
     background-image: url('./images/banner-sm.png');
+  }
+  .bg-\[url\(\'\.\/images\/story_sm\.png\'\)\] {
+    background-image: url('./images/story_sm.png');
   }
   .bg-\[url\(\'\/images\/banner-co-branded-sm\.png\'\)\] {
     background-image: url('/images/banner-co-branded-sm.png');
@@ -1010,6 +1016,11 @@
       border-radius: 12px;
     }
   }
+  .lg\:bg-\[url\(\'\.\.\.\/images\/bg\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('.../images/bg.png');
+    }
+  }
   .lg\:bg-\[url\(\'\.\.\/images\/banner\.png\'\)\] {
     @media (width >= 64rem) {
       background-image: url('../images/banner.png');
@@ -1020,9 +1031,24 @@
       background-image: url('../images/bg.png');
     }
   }
+  .lg\:bg-\[url\(\'\.\/images\/banner-co-branded\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('./images/banner-co-branded.png');
+    }
+  }
   .lg\:bg-\[url\(\'\.\/images\/banner\.png\'\)\] {
     @media (width >= 64rem) {
       background-image: url('./images/banner.png');
+    }
+  }
+  .lg\:bg-\[url\(\'\.\/images\/bg\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('./images/bg.png');
+    }
+  }
+  .lg\:bg-\[url\(\'\.\/images\/story\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('./images/story.png');
     }
   }
   .lg\:bg-\[url\(\'\/images\/banner-co-branded\.png\'\)\] {
